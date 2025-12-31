@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirect</title>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const url = params.get('url') || params.get('u');
+    if (url) {
+      window.location.href = url;
+    }
+  </script>
+</head>
+<body></body>
+</html>
